@@ -1,0 +1,84 @@
+# Compiled binaries and artifacts
+/target/
+**/target/
+
+# Cargo.lock should be committed for applications, but not for libraries
+# Uncomment the following line if this is a library
+# Cargo.lock
+
+# Generated documentation
+/doc/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Rust specific
+*.pdb
+*.exe
+
+# Test artifacts
+tests/tmp/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Local environment files
+.env
+.env.local
+
+# Coverage reports
+coverage/
+lcov.info
+*.profraw
+
+# Benchmark results
+bench_results/
+
+# Large test files (keep small examples)
+*.large
+*.big
+examples/*.txt
+!examples/sample.txt
+
+# Build artifacts
+build/
+dist/
+
+# Package manager files
+yarn.lock
+package-lock.json
+node_modules/
+
+# Documentation build
+book/
+mdbook/
+
+# Flamegraph outputs
+flamegraph.svg
+perf.data*
+
+# Custom ignores for this project
+Shakespeare*.zip
+*.compressed
+*.encoded
+test_outputs/

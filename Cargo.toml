@@ -1,0 +1,81 @@
+[package]
+name = "arithmetic-compression-wizard"
+version = "0.1.0"
+edition = "2021"
+authors = ["arktusprime <arktusprime@gmail.com>"]
+license = "MIT"
+description = "🧙‍♂️ An arithmetic coding compressor with word dictionary optimization - Perfect for Rust meetup presentations!"
+homepage = ""
+repository = ""
+documentation = ""
+readme = "README.md"
+keywords = [
+    "compression",
+    "arithmetic-coding",
+    "algorithms",
+    "systems-programming",
+    "education",
+]
+categories = ["compression", "algorithms", "encoding", "science"]
+exclude = ["*.txt", "*.zip", "/target", "/Cargo.lock"]
+
+[lib]
+name = "arithmetic_compression_wizard"
+path = "src/lib.rs"
+
+[[bin]]
+name = "compression-demo"
+path = "src/main.rs"
+
+[dependencies]
+# No external dependencies! 🦀
+# This project showcases pure Rust capabilities without relying on external crates.
+# Perfect for demonstrating Rust's excellent standard library and algorithmic programming features.
+
+[dev-dependencies]
+# For future benchmarking and advanced testing
+# criterion = "0.5"
+
+[profile.release]
+# Optimized for maximum compression performance
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[profile.dev]
+# Fast compilation for development
+opt-level = 0
+debug = true
+debug-assertions = true
+overflow-checks = true
+
+[features]
+default = []
+
+[[example]]
+name = "basic_compression_demo"
+path = "examples/basic_compression_demo.rs"
+
+[[example]]
+name = "file_compression_demo"
+path = "examples/file_compression_demo.rs"
+
+[[example]]
+name = "interactive_demo"
+path = "examples/interactive_demo.rs"
+
+[[example]]
+name = "advanced_features_demo"
+path = "examples/advanced_features_demo.rs"
+
+[[example]]
+name = "quick_start"
+path = "examples/quick_start.rs"
+
+[[example]]
+name = "compression_theory_demo"
+path = "examples/compression_theory_demo.rs"
+
+[package.metadata.playground]
+features = ["default"]
