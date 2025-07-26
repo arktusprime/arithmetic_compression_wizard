@@ -73,9 +73,5 @@ path = "examples/advanced_features_demo.rs"
 name = "quick_start"
 path = "examples/quick_start.rs"
 
-[[example]]
-name = "compression_theory_demo"
-path = "examples/compression_theory_demo.rs"
-
 [package.metadata.playground]
 features = ["default"]
